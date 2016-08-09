@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>Bananinha</title>
+
+
+
+    <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <link rel="stylesheet" type="text/css"  href="slide.css" />
+    <!--[if lte IE 8]>
+
+ <![endif]-->
+</head>
+<body>
+<div id="interface">
+<header id="cabecalho">
+
+
+<!-- Slide show apresentação 
+
+<figure>
+		<span class="trs next"></span>
+		<span class="trs prev"></span>
+
+		<div id="slider">
+			<a href="#" class="trs"><img src="_imagens/imagem1.jpg" alt="Legenda da imagem 1" /></a>
+			<a href="#" class="trs"><img src="_imagens/imagem2.jpg" alt="Legenda da imagem 2" /></a>		
+		</div>
+
+		<figcaption></figcaption>
+	</figure>
+
+	<script type="text/javascript">
+		function setaImagem(){
+			var settings = {
+				primeiraImg: function(){
+					elemento = document.querySelector("#slider a:first-child");
+					elemento.classList.add("ativo");
+					this.legenda(elemento);
+				},
+
+				slide: function(){
+					elemento = document.querySelector(".ativo");
+
+					if(elemento.nextElementSibling){
+						elemento.nextElementSibling.classList.add("ativo");
+						settings.legenda(elemento.nextElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");
+						settings.primeiraImg();
+					}
+
+				},
+
+				proximo: function(){
+					clearInterval(intervalo);
+					elemento = document.querySelector(".ativo");
+					
+					if(elemento.nextElementSibling){
+						elemento.nextElementSibling.classList.add("ativo");
+						settings.legenda(elemento.nextElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");
+						settings.primeiraImg();
+					}
+					intervalo = setInterval(settings.slide,4000);
+				},
+
+				anterior: function(){
+					clearInterval(intervalo);
+					elemento = document.querySelector(".ativo");
+					
+					if(elemento.previousElementSibling){
+						elemento.previousElementSibling.classList.add("ativo");
+						settings.legenda(elemento.previousElementSibling);
+						elemento.classList.remove("ativo");
+					}else{
+						elemento.classList.remove("ativo");						
+						elemento = document.querySelector("a:last-child");
+						elemento.classList.add("ativo");
+						this.legenda(elemento);
+					}
+					intervalo = setInterval(settings.slide,4000);
+				},
+
+				legenda: function(obj){
+					var legenda = obj.querySelector("img").getAttribute("alt");
+					document.querySelector("figcaption").innerHTML = legenda;
+				}
+
+			}
+
+
+			//chama o slide
+			settings.primeiraImg();
+
+			//chama a legenda
+			settings.legenda(elemento);
+
+			//chama o slide à um determinado tempo
+			var intervalo = setInterval(settings.slide,4000);
+			document.querySelector(".next").addEventListener("click",settings.proximo,false);
+			document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+
+		}
+
+		window.addEventListener("load",setaImagem,false);
+	</script>
+	
+-->
+<nav id="logo">
+<a href="http://www.iloveart.com.br"><img src="_imagens/logo20.png"></a>
+
+</nav>
+<nav id="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Produtos</a></li>
+		<li><a href="#">Sobre</a></li>
+		<li><a href="#">Contato</a></li>
+	</ul>
+
+</nav>
+
+
+</div>
+</header>
+</body>
+</html>

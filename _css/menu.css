@@ -1,0 +1,52 @@
+@charset "UTF-8"
+
+
+	<style type="text/css">
+
+body {
+background: #ffffff	;
+	}
+
+
+
+
+nav#menu {
+width: 1000px;
+height: 55px;
+}
+
+nav#menu ul {
+width: 540px;
+height: 55px;
+background: transparent;
+list-style-type: none;
+}
+
+nav#menu li {
+
+background-image: url('ball30.jpg');
+font-family: evolution;
+background-size: 30px;
+width: 120px;
+height: 55px;
+float: left;
+margin-left: 0px;
+}
+
+nav#menu li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav#menu li a:hover {
+	color: #ffcc00;
+}
+
+
+
+
+
+
+
+
+</style>
